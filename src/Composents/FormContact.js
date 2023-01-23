@@ -11,7 +11,7 @@ export default function FormContact() {
   {
       id:uuid(),name:"KAOUTAR KAIDIRI",tel:'0536785944',ville:'Agadir'
   },{
-    id:uuid(),name:"AHMED IDRISSI",tel:'0123456789',ville:'Tanger'
+      id:uuid(),name:"AHMED IDRISSI",tel:'0123456789',ville:'Tanger'
   }
 
 ]);
