@@ -3,9 +3,9 @@ import React from 'react'
 export default function Contact({txt,delf,txttel,txtville}) {
   return (
     <div>
-      <input type="text"  readOnly    value={txt} style={{width:"150px"}}   />  
-<input type="text"  readOnly    value={txttel}   style={{width:"150px"}}  /> 
-<input type="text"  readOnly    value={txtville}    /> 
+      <input type="text"  readOnly  className='inp2'   value={txt}    />  
+<input type="text"  readOnly    className='inp1' value={txttel}    /> 
+<input type="text"  readOnly  className='inp3'   value={txtville}    /> 
  
 
 <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" style={{color:"red"}} class="bi bi-person-x" viewBox="0 0 16 16" onClick={delf}>

@@ -56,21 +56,21 @@ const trierdecroissant =() =>{
     <div>
        <h1 className='title'>App contact</h1>
       <div className="row  justify-content-between" >
-<div className='mt-5 py-3  c3' style={{backgroundColor:'white',width:'600px',marginLeft:'30px'}}>
+<div className='mt-5 py-3  c3'>
       <form action="">
         <h3>Ajouter un nouveau contact</h3>
       <label htmlFor="nom">Nom :</label>
 
-       <input className='form-control'placeholder='Ajouter nom contact ' ref={name} id='nom' style={{width:'500px'}} type="text" />
+       <input className='form-control inp 'placeholder='Ajouter nom contact ' ref={name} id='nom'  type="text" />
        <br />
        <label htmlFor="tel">Telephone :</label>
-       <input  className='form-control'  placeholder='01-234-56789' ref={tel} id='tel' style={{width:'500px'}} type="tel" />
+       <input  className='form-control inp'  placeholder='01-234-56789' ref={tel} id='tel'  type="tel" />
        <br />
        <label htmlFor="ville">Ville :</label>
-       <input  className='form-control' placeholder='ville' ref={ville} id='ville' style={{width:'500px'}} type="text" />
+       <input  className='form-control inp ' placeholder='ville' ref={ville} id='ville'  type="text" />
 {/*        <input type="button" className='btn btn-outline-primary' onClick={ajouteC} style={{marginTop:'30px',marginLeft:'170px'}}  value="+ Ajouter Contact" />
  */}    
-  <svg xmlns="http://www.w3.org/2000/svg" onClick={ajouteC} width="30" height="30" style={{borderRadius:'5px ',backgroundColor:'rgb(213, 213, 240)',width:'50px',height:'35px',marginTop:'30px',marginLeft:'463px'}} fill="currentColor" class="bi bi-person-plus" viewBox="0 0 16 16">
+  <svg xmlns="http://www.w3.org/2000/svg" onClick={ajouteC} width="30" height="30"  fill="currentColor" className="bi bi-person-plus btnaj" viewBox="0 0 16 16">
   <path d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H1s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C9.516 10.68 8.289 10 6 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/>
   <path fill-rule="evenodd" d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5z"/>
 </svg>
@@ -78,10 +78,10 @@ const trierdecroissant =() =>{
     {/*   </div> */}
     </div>
 
-    <div className='mt-5 py-3  c3' style={{backgroundColor:'white',width:'600px',marginRight:'30px',marginLeft:'30px'}}>
+    <div className='mt-5 py-3  c4'>
     <h3>Liste des contacts</h3>
     <div class="input-group">
-  <input type="search" class="form-control " onChange={(e)=>setChercher(e.target.value)} placeholder=" Cherchez par ville" /> 
+  <input type="search" className="form-control cher" onChange={(e)=>setChercher(e.target.value)} placeholder=" Cherchez par ville" /> 
   </div>
   <div style={{marginTop:"25px",marginBottom:'25px'}} >
    {/* Button trier croissant */}
